@@ -1,0 +1,62 @@
+<!-- 
+ media typy: talet
+ media features: max-width, min-width -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            background-color: antiquewhite;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        p {
+            color: red;
+            font-size: 70px;
+            font-weight: bold;
+            margin-top: 200px;   
+        }
+
+
+    @media screen and (min-width: 1024px) {
+        .pc, .mobile, .tablet {
+            display: block;
+        }
+       
+        
+    }
+
+    @media screen and (max-width: 1024px) and (min-width:740px){
+      
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 739px) {
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="mobile">Mobile</p>
+        <p class="tablet">Tablet</p>
+        <p class="pc">PC</p>
+    </div>
+</body>
+</html>

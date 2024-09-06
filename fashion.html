@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNV Fashion Week</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav {
+        
+        background-color: aqua;
+        padding: 15px 0;
+        margin: 0 15px;
+        margin-top: 15px;
+    }
+    h3, p, h2 {
+        margin-left: 20px;
+
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+        padding: 0 15px;
+
+    }
+    
+
+    .img {
+        width: 100%;
+    }
+    @media screen and (max-width:739px){
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 12px;
+            row-gap: 12px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2>PNV Fashion Week</h2>
+            <p>Resize this responsive page!</p>
+        </div>
+
+        <div class="content">
+            <div class="city">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom, With a metropolitan area of over 13 million inhabittans.</p>
+                <img class="img" src="https://media.glamour.com/photos/66b2513ba13d7cf35ff21adf/1:1/w_2000,h_2000,c_limit/2024%20fashion%20trends.jpg" alt="">
+            </div>
+            <div class="city">
+                <h3>Pari</h3>
+                <p>Pari is the capital of France.</p>
+                <p>It is the most populous city in the United Kingdom, With a metropolitan area of over 13 million inhabittans.</p>
+                <img class="img" src="https://media.glamour.com/photos/66b2513ba13d7cf35ff21adf/1:1/w_2000,h_2000,c_limit/2024%20fashion%20trends.jpg" alt="">
+            </div>
+            <div class="city">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+                <p>It is the most populous city in the United Kingdom, With a metropolitan area of over 13 million inhabittans.</p>
+                <img class="img" src="https://media.glamour.com/photos/66b2513ba13d7cf35ff21adf/1:1/w_2000,h_2000,c_limit/2024%20fashion%20trends.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
